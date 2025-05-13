@@ -7,3 +7,10 @@ jobs:
         steps: 
             - name: Settings an error message
               run: echo "::error::Mising semicolon"
+            - name: Setting an debug message with params
+              run: echo "::debug title=Error title,file=app.js,line=2,endLine=3,col=5,endColumn=7::Missing semicolon"
+            - name: Setting an warning message with params
+              run: echo "::warning title=Error title,file=app.js,line=2,endLine=3,col=5,endColumn=7::Missing semicolon"
+            - name: Setting an notice message with params
+              run: echo "::notice title=Error title,file=app.js,line=2,endLine=3,col=5,endColumn=7::Missing semicolon"
+            
