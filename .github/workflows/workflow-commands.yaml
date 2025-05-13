@@ -16,10 +16,13 @@ jobs:
             - name: Group of logs
               run: |
                 echo "::group::My Group"
-                echo:"Inside group"
+                echo "Inside group"
                 echo "::endgroup::"
+            
             - name: Masking a value
               run: echo "::add-mask::Secret string"
+            
             - name: Echo a secret
               run: echo "Secret string"
+            
             
