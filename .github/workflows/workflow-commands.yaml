@@ -1,0 +1,9 @@
+name: Workflow-commands
+on: [push]
+
+jobs: 
+    test-wf-commands:
+        runs-on: ubuntu-latest
+        steps: 
+            - name: Settings an error message
+              run: echo "::error::Mising semicolon"
